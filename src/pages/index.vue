@@ -2,6 +2,7 @@
 
 <template>
   <div >
+    <TheFooter mb10/>
     <Game />
     </div>
 </template>
