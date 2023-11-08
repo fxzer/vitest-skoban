@@ -6,8 +6,13 @@ export enum MapTile {
 export type Map = MapTile[][]
 
 export const useMapStore = defineStore('map', () => {
-  const count = ref(0)
-  const increment = () => count.value++
-  const dobule = computed(() => count.value * 2)
-  return { count, increment, dobule }
+
+const map = ref([
+  [1, 1, 1, 1, 1],
+  [1, 2, 2, 2, 1],
+  [1, 2, 2, 2, 1],
+  [1, 2, 2, 2, 1],
+  [1, 1, 1, 1, 1],
+])
+  return { map}
 })

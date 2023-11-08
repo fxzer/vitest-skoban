@@ -4,7 +4,7 @@
 <template>
 <div flex-center>
     <Map  relative>
-        <Player :pos="{x:2,y:2}"/>
+        <Player />
     </Map>
 </div>
 <div my-10 btn>

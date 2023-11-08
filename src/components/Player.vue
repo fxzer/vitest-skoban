@@ -1,11 +1,27 @@
 <script setup lang='ts'>
 import keeper from '~/assets/keeper.png'
-const props =   defineProps(['pos']) 
-const { pos } = toRefs(props)
+import { usePlayerStore } from '~/stores';
+const { player, movePlayerToLeft  } = usePlayerStore()
+
 const style = computed(() => ({
-  left: `${pos?.value.x * 50 }px`,
-  top: `${pos?.value.y * 50}px`
+  left: `${player.x * 50 }px`,
+  top: `${player.y * 50}px`
 }))
+
+window.addEventListener('keyup',(e) => {
+ switch(e.code){
+  case 'ArrowLeft':
+  movePlayerToLeft()
+    break; 
+  case 'ArrowRight':
+    break;
+  case 'ArrowUp':
+    break;
+  case 'ArrowDown':
+    break;
+ } 
+  
+})
 </script>
 
 <template>

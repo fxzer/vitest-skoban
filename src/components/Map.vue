@@ -1,14 +1,8 @@
 <script setup lang='ts'>
-import { MapTile } from '~/stores';
+import { MapTile, useMapStore } from '~/stores';
 import wall from '~/assets/wall.png'
 import floor from '~/assets/floor.png'
-const map = [
-  [1, 1, 1, 1, 1],
-  [1, 2, 2, 2, 1],
-  [1, 2, 2, 2, 1],
-  [1, 2, 2, 2, 1],
-  [1, 1, 1, 1, 1],
-]
+const { map } = useMapStore()
 </script>
 
 <template>
