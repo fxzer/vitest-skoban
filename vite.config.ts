@@ -1,7 +1,5 @@
-/// <reference types="vitest" />
-
 import path from 'node:path'
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config'
 import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
 import Components from 'unplugin-vue-components/vite'
@@ -59,5 +57,8 @@ export default defineConfig({
   // https://github.com/vitest-dev/vitest
   test: {
     environment: 'jsdom',
+    coverage: {
+      provider: 'v8',
+    },
   },
 })

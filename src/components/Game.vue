@@ -2,15 +2,16 @@
 </script>
 
 <template>
-<div flex-center>
-    <Map  relative>
-        <Player />
+  <div flex-center>
+    <Map relative>
+      <Player />
     </Map>
-</div>
-<div my-10 btn>
+  </div>
+  <div my-10 btn>
     下一关
-</div>
+  </div>
 </template>
+
 <style scoped lang='scss'>
 
 </style>
