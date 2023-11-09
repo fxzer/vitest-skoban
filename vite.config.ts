@@ -56,9 +56,11 @@ export default defineConfig({
 
   // https://github.com/vitest-dev/vitest
   test: {
+    // reporters: ['basic'],
     environment: 'jsdom',
     coverage: {
       provider: 'v8',
     },
+    setupFiles: path.resolve(__dirname, './vitest.setup.ts'),
   },
 })

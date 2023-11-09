@@ -503,6 +503,7 @@ declare module 'vue' {
     readonly usePointer: UnwrapRef<typeof import('@vueuse/core')['usePointer']>
     readonly usePointerLock: UnwrapRef<typeof import('@vueuse/core')['usePointerLock']>
     readonly usePointerSwipe: UnwrapRef<typeof import('@vueuse/core')['usePointerSwipe']>
+    readonly usePosition: UnwrapRef<typeof import('./src/composables/position')['usePosition']>
     readonly usePreferredColorScheme: UnwrapRef<typeof import('@vueuse/core')['usePreferredColorScheme']>
     readonly usePreferredContrast: UnwrapRef<typeof import('@vueuse/core')['usePreferredContrast']>
     readonly usePreferredDark: UnwrapRef<typeof import('@vueuse/core')['usePreferredDark']>
@@ -788,6 +789,7 @@ declare module '@vue/runtime-core' {
     readonly usePointer: UnwrapRef<typeof import('@vueuse/core')['usePointer']>
     readonly usePointerLock: UnwrapRef<typeof import('@vueuse/core')['usePointerLock']>
     readonly usePointerSwipe: UnwrapRef<typeof import('@vueuse/core')['usePointerSwipe']>
+    readonly usePosition: UnwrapRef<typeof import('./src/composables/position')['usePosition']>
     readonly usePreferredColorScheme: UnwrapRef<typeof import('@vueuse/core')['usePreferredColorScheme']>
     readonly usePreferredContrast: UnwrapRef<typeof import('@vueuse/core')['usePreferredContrast']>
     readonly usePreferredDark: UnwrapRef<typeof import('@vueuse/core')['usePreferredDark']>

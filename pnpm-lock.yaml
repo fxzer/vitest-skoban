@@ -94,6 +94,9 @@ devDependencies:
   vitest:
     specifier: ^0.34.6
     version: 0.34.6(jsdom@22.1.0)
+  vue-router-mock:
+    specifier: ^1.0.0
+    version: 1.0.0(vue-router@4.2.5)(vue@3.3.7)
   vue-tsc:
     specifier: ^1.8.22
     version: 1.8.22(typescript@5.2.2)
@@ -1758,7 +1761,6 @@ packages:
 
   /@vue/devtools-api@6.5.1:
     resolution: {integrity: sha512-+KpckaAQyfbvshdDW5xQylLni1asvNSGme1JFs8I1+/H5pHEhqUKMEQD/qn3Nx5+/nycBq11qAEi8lk+LXI2dA==}
-    dev: false
 
   /@vue/language-core@1.8.22(typescript@5.2.2):
     resolution: {integrity: sha512-bsMoJzCrXZqGsxawtUea1cLjUT9dZnDsy5TuZ+l1fxRMzUGQUG9+Ypq4w//CqpWmrx7nIAJpw2JVF/t258miRw==}
@@ -6226,6 +6228,16 @@ packages:
       - supports-color
     dev: true
 
+  /vue-router-mock@1.0.0(vue-router@4.2.5)(vue@3.3.7):
+    resolution: {integrity: sha512-j65lh+jhEuEM7sWAz/eenNsEV0VrRXFreNxtIGgLApZkM2h7orImvHSLJ3LhbUa2sJnTtjuy8otSrvoTsdGVYw==}
+    peerDependencies:
+      vue: ^3.2.23
+      vue-router: ^4.0.12
+    dependencies:
+      vue: 3.3.7(typescript@5.2.2)
+      vue-router: 4.2.5(vue@3.3.7)
+    dev: true
+
   /vue-router@4.2.5(vue@3.3.7):
     resolution: {integrity: sha512-DIUpKcyg4+PTQKfFPX88UWhlagBEBEfJ5A8XDXRJLUnZOvcpMF8o/dnL90vpVkGaPbjvXazV/rC1qBKrZlFugw==}
     peerDependencies:
@@ -6233,7 +6245,6 @@ packages:
     dependencies:
       '@vue/devtools-api': 6.5.1
       vue: 3.3.7(typescript@5.2.2)
-    dev: false
 
   /vue-template-compiler@2.7.15:
     resolution: {integrity: sha512-yQxjxMptBL7UAog00O8sANud99C6wJF+7kgbcwqkvA38vCGF7HWE66w0ZFnS/kX5gSoJr/PQ4/oS3Ne2pW37Og==}
