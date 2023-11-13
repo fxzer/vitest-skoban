@@ -1,13 +1,14 @@
-import { usePlayerStore } from '~/stores'
-
-export function usePosition() {
+export type Position = {
+  x: number
+  y: number
+}
+export function usePosition(pos: Position) {
   const STEP = 50
-  const { player } = usePlayerStore()
   const style = computed(() => ({
     width: `${STEP}px`,
     height: `${STEP}px`,
-    left: `${player.x * STEP}px`,
-    top: `${player.y * STEP}px`,
+    left: `${pos.x * STEP}px`,
+    top: `${pos.y * STEP}px`,
   }))
   return { style }
 }

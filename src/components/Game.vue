@@ -5,6 +5,7 @@
   <div flex-center>
     <Map relative>
       <Player />
+      <Box  /> 
     </Map>
   </div>
   <div my-10 btn>
