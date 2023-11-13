@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-import { useBoxStore } from '~/stores';
+import { useBoxStore } from '~/stores'
 
 const { boxs, addBox, resetBoxs } = useBoxStore()
 function generateBox() {
@@ -10,7 +10,6 @@ function generateBox() {
   addBox({ x: 2, y: 3 })
 }
 generateBox()
-
 </script>
 
 <template>

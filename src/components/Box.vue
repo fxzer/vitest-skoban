@@ -1,8 +1,8 @@
 <script setup lang='ts'>
 import boxSrc from '~/assets/box.png'
-import { type Position } from '~/stores';
+import type { Position } from '~/stores'
 
-const { box } = defineProps<{box:Position}>()
+const { box } = defineProps<{ box: Position }>()
 const { style } = usePosition(box)
 </script>
 

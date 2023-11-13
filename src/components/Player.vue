@@ -1,6 +1,7 @@
 <script setup lang='ts'>
 import playerSrc from '~/assets/player.png'
-import { usePlayerStore } from '~/stores';
+import { usePlayerStore } from '~/stores'
+
 const { player } = usePlayerStore()
 useMove()
 const { style } = usePosition(player)
