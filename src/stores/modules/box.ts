@@ -15,8 +15,8 @@ export const useBoxStore = defineStore("box", () => {
     boxs.push(box);
   }
 
-  function findBox(x: number, y: number) {
-    return boxs.find((box) => box.x === x && box.y === y);
+  function findBox(pos: { x: number; y: number }): Box | undefined {
+    return boxs.find((box) => box.x === pos.x && box.y === pos.y);
   }
 
   function resetBoxs() {

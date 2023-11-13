@@ -1,57 +1,46 @@
-import { defineStore } from 'pinia'
-import { useMapStore, useBoxStore } from '~/stores'
+import { defineStore } from "pinia";
+import { useMapStore, useBoxStore } from "~/stores";
 
-export const usePlayerStore = defineStore('player', () => {
-  const { isWall } = useMapStore()
-  const { findBox } = useBoxStore()
+export const usePlayerStore = defineStore("player", () => {
+  const { isWall } = useMapStore();
+  const { findBox } = useBoxStore();
   const player = reactive({
     x: 2,
     y: 2,
-  })
+  });
+
+  function _move(dx: number, dy: number) {
+    const nextPosition = { x: player.x + dx, y: player.y + dy };
+    if (isWall(nextPosition)) return;
+    player.x = nextPosition.x;
+    player.y = nextPosition.y;
+    const box = findBox(nextPosition);
+    if (box) {
+      box.x = box.x + dx;
+      box.y = box.y + dy;
+    }
+  }
 
   function movePlayerToLeft() {
-    const x = player.x - 1
-    if (isWall({ x, y: player.y }))
-      return
-    player.x = x
-
-    const box = findBox(x, player.y)
-    if(box) {
-      box.x = box.x - 1
-    }
+    _move(-1, 0);
   }
 
   function movePlayerToRight() {
-    const x = player.x + 1
-    if (isWall({ x, y: player.y }))
-      return
-    player.x = x
-    const box = findBox(x, player.y)
-    if(box) {
-      box.x = box.x + 1
-    }
+    _move(1, 0);
   }
 
   function movePlayerToUp() {
-    const y = player.y - 1
-    if (isWall({ x: player.x, y }))
-      return
-    player.y = y
-    const box = findBox(player.x, y)
-    if(box) {
-      box.y = box.y - 1
-    }
+    _move(0, -1);
   }
 
   function movePlayerToDown() {
-    const y = player.y + 1
-    if (isWall({ x: player.x, y }))
-      return
-    player.y = y
-    const box = findBox(player.x, y)
-    if(box) {
-      box.y = box.y + 1
-    }
+    _move(0, 1);
   }
-  return { player, movePlayerToLeft, movePlayerToRight, movePlayerToUp, movePlayerToDown }
-})
+  return {
+    player,
+    movePlayerToLeft,
+    movePlayerToRight,
+    movePlayerToUp,
+    movePlayerToDown,
+  };
+});
