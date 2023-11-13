@@ -9,8 +9,8 @@ const { style } = usePosition(box)
 
 <template>
   <div absolute :style="style">
-    <img wh-full v-if="box.onTarget" :src="boxOnTargetSrc">
-    <img wh-full v-else :src="boxSrc">
+    <img v-if="box.onTarget" wh-full :src="boxOnTargetSrc">
+    <img v-else wh-full :src="boxSrc">
   </div>
 </template>
 

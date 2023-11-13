@@ -9,7 +9,6 @@ export interface Box {
 export const useBoxStore = defineStore('box', () => {
   const { isWall } = useMapStore()
   const boxs: Box[] = reactive([])
-
   function createBox(x: number, y: number): Box {
     return { x, y }
   }
@@ -39,6 +38,7 @@ export const useBoxStore = defineStore('box', () => {
 
     const { targets } = useTargetStore()
     box.onTarget = targets.some(target => target.x === box.x && target.y === box.y)
+
     return true
   }
 

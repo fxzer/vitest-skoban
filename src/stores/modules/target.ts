@@ -15,11 +15,9 @@ export const useTargetStore = defineStore('target', () => {
     targets.push(Target)
   }
 
-
   function resetTargets() {
     targets.splice(0, targets.length)
   }
 
-
-  return { targets, createTarget, addTarget, resetTargets}
+  return { targets, createTarget, addTarget, resetTargets }
 })

@@ -6,13 +6,14 @@ export const usePlayerStore = defineStore('player', () => {
   const { findBox, moveBox } = useBoxStore()
   const player = reactive({
     x: 2,
-    y: 2,
+    y: 3,
   })
 
   function _move(dx: number, dy: number) {
     const nextPosition = { x: player.x + dx, y: player.y + dy }
     // 判断下一个位置是不是墙
-    if(isWall(nextPosition)) return 
+    if (isWall(nextPosition))
+      return
     // 判断下一个位置是否是箱子，并判断箱子移动能否移动
     const box = findBox(nextPosition)
     if (box) {

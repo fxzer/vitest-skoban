@@ -1,18 +1,18 @@
 <template>
   <nav mt-6 inline-flex gap-2 text-xl>
-    <button  @click="toggleDarkAnimate">
+    <button @click="toggleDarkAnimate">
       <div i-carbon-sun dark:i-carbon-moon />
     </button>
 
     <a
-      i-carbon-logo-github 
+      i-carbon-logo-github
       rel="noreferrer"
       href="https://github.com/fxzer/vitest-sokoban"
       target="_blank"
       title="GitHub"
     />
     <a
-      i-simple-icons-gitee 
+      i-simple-icons-gitee
       rel="noreferrer"
       href="https://gitee.com/fxzer/vitest-sokoban"
       target="_blank"

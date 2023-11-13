@@ -1,11 +1,12 @@
 <script setup lang='ts'>
-import { useBoxStore,useTargetStore } from '~/stores'
+import { useBoxStore, useGameStore, useTargetStore } from '~/stores'
 
+const { game } = useGameStore()
 const { boxs, addBox, resetBoxs } = useBoxStore()
 const { targets, addTarget, resetTargets } = useTargetStore()
 function generateBox() {
   resetBoxs()
-  addBox({ x: 1, y: 2 })
+  addBox({ x: 2, y: 2 })
   addBox({ x: 3, y: 2 })
   // addBox({ x: 2, y: 1 })
   // addBox({ x: 2, y: 3 })
@@ -13,7 +14,8 @@ function generateBox() {
 
 function generateTarget() {
   resetTargets()
-  addTarget({ x: 4, y: 1 })
+  addTarget({ x: 2, y: 1 })
+  addTarget({ x: 3, y: 3 })
 }
 generateBox()
 generateTarget()
@@ -27,7 +29,7 @@ generateTarget()
       <Player />
     </Map>
   </div>
-  <div my-10 btn>
+  <div v-if="game.isPassed" my-10 btn>
     下一关
   </div>
 </template>
