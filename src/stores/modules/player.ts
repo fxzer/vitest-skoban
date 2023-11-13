@@ -1,11 +1,12 @@
 import { defineStore } from 'pinia'
-import { useMapStore } from './map'
+import { useMapStore, useBoxStore } from '~/stores'
 
 export const usePlayerStore = defineStore('player', () => {
   const { isWall } = useMapStore()
+  const { findBox } = useBoxStore()
   const player = reactive({
-    x: 1,
-    y: 1,
+    x: 2,
+    y: 2,
   })
 
   function movePlayerToLeft() {
@@ -13,6 +14,11 @@ export const usePlayerStore = defineStore('player', () => {
     if (isWall({ x, y: player.y }))
       return
     player.x = x
+
+    const box = findBox(x, player.y)
+    if(box) {
+      box.x = box.x - 1
+    }
   }
 
   function movePlayerToRight() {
@@ -20,6 +26,10 @@ export const usePlayerStore = defineStore('player', () => {
     if (isWall({ x, y: player.y }))
       return
     player.x = x
+    const box = findBox(x, player.y)
+    if(box) {
+      box.x = box.x + 1
+    }
   }
 
   function movePlayerToUp() {
@@ -27,6 +37,10 @@ export const usePlayerStore = defineStore('player', () => {
     if (isWall({ x: player.x, y }))
       return
     player.y = y
+    const box = findBox(player.x, y)
+    if(box) {
+      box.y = box.y - 1
+    }
   }
 
   function movePlayerToDown() {
@@ -34,6 +48,10 @@ export const usePlayerStore = defineStore('player', () => {
     if (isWall({ x: player.x, y }))
       return
     player.y = y
+    const box = findBox(player.x, y)
+    if(box) {
+      box.y = box.y + 1
+    }
   }
   return { player, movePlayerToLeft, movePlayerToRight, movePlayerToUp, movePlayerToDown }
 })
