@@ -1,7 +1,8 @@
 import { defineStore } from 'pinia'
-import { useBoxStore } from '~/stores'
+import { useBoxStore, useMapStore } from '~/stores'
 
 export const usePlayerStore = defineStore('player', () => {
+  const { isWall } = useMapStore()
   const { findBox, moveBox } = useBoxStore()
   const player = reactive({
     x: 2,
@@ -10,7 +11,9 @@ export const usePlayerStore = defineStore('player', () => {
 
   function _move(dx: number, dy: number) {
     const nextPosition = { x: player.x + dx, y: player.y + dy }
-    // 箱子移动
+    // 判断下一个位置是不是墙
+    if(isWall(nextPosition)) return 
+    // 判断下一个位置是否是箱子，并判断箱子移动能否移动
     const box = findBox(nextPosition)
     if (box) {
       const canMove = moveBox(box, dx, dy)
