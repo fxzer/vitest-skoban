@@ -1,5 +1,6 @@
-import { usePlayerStore } from "~/stores"
-export function usePosition(){
+import { usePlayerStore } from '~/stores'
+
+export function usePosition() {
   const STEP = 50
   const { player } = usePlayerStore()
   const style = computed(() => ({

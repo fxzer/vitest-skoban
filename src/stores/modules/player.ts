@@ -1,29 +1,39 @@
 import { defineStore } from 'pinia'
-import { MapTile, useMapStore } from './map'
+import { useMapStore } from './map'
 
 export const usePlayerStore = defineStore('player', () => {
-  const { map } = useMapStore()
+  const { isWall } = useMapStore()
   const player = reactive({
-    x: 0,
-    y: 0,
+    x: 1,
+    y: 1,
   })
 
   function movePlayerToLeft() {
-    const isLeftWall = map[player.y][player.x - 1] === MapTile.WALL
-    if(isLeftWall) return console.log('left is wall')
-    player.x = player.x - 1
+    const x = player.x - 1
+    if (isWall({ x, y: player.y }))
+      return
+    player.x = x
   }
 
   function movePlayerToRight() {
-    player.x = player.x + 1
+    const x = player.x + 1
+    if (isWall({ x, y: player.y }))
+      return
+    player.x = x
   }
 
   function movePlayerToUp() {
-    player.y = player.y - 1
+    const y = player.y - 1
+    if (isWall({ x: player.x, y }))
+      return
+    player.y = y
   }
 
   function movePlayerToDown() {
-    player.y = player.y + 1
+    const y = player.y + 1
+    if (isWall({ x: player.x, y }))
+      return
+    player.y = y
   }
   return { player, movePlayerToLeft, movePlayerToRight, movePlayerToUp, movePlayerToDown }
 })

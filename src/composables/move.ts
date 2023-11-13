@@ -1,5 +1,5 @@
-import { usePlayerStore } from "~/stores";
-import { onMounted, onUnmounted } from "vue";
+import { onMounted, onUnmounted } from 'vue'
+import { usePlayerStore } from '~/stores'
 
 export function useMove() {
   const {
@@ -7,29 +7,29 @@ export function useMove() {
     movePlayerToDown,
     movePlayerToUp,
     movePlayerToRight,
-  } = usePlayerStore();
+  } = usePlayerStore()
 
   function handleKeyup(e: KeyboardEvent) {
     switch (e.code) {
-      case "ArrowLeft":
-        movePlayerToLeft();
-        break;
-      case "ArrowRight":
-        movePlayerToRight();
-        break;
-      case "ArrowUp":
-        movePlayerToUp();
-        break;
-      case "ArrowDown":
-        movePlayerToDown();
-        break;
+      case 'ArrowLeft':
+        movePlayerToLeft()
+        break
+      case 'ArrowRight':
+        movePlayerToRight()
+        break
+      case 'ArrowUp':
+        movePlayerToUp()
+        break
+      case 'ArrowDown':
+        movePlayerToDown()
+        break
     }
   }
-    // window.addEventListener("keyup", handleKeyup);
+  // window.addEventListener("keyup", handleKeyup);
   onMounted(() => {
-    window.addEventListener("keyup", handleKeyup);
-  });
+    window.addEventListener('keyup', handleKeyup)
+  })
   onUnmounted(() => {
-    window.removeEventListener("keyup", handleKeyup);
-  });
+    window.removeEventListener('keyup', handleKeyup)
+  })
 }

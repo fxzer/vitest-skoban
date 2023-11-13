@@ -1,10 +1,10 @@
-import { beforeEach, afterEach, it, expect, describe, vi } from 'vitest'
+import { beforeEach, describe, expect, it } from 'vitest'
 
 import { createPinia, setActivePinia } from 'pinia'
 import { useMapStore } from '~/stores'
 
 beforeEach(() => {
- setActivePinia(createPinia()) 
+  setActivePinia(createPinia())
 })
 describe('map', () => {
   it('setmap shuold effect', () => {
@@ -19,5 +19,4 @@ describe('map', () => {
     setNewMap(newMap)
     expect(map).toEqual(newMap)
   })
-  
 })
