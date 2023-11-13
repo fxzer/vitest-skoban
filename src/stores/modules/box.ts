@@ -1,9 +1,10 @@
 import { defineStore } from 'pinia'
-import { useMapStore } from '.'
+import { useMapStore, useTargetStore } from '.'
 
-interface Box {
+export interface Box {
   x: number
   y: number
+  onTarget?: boolean
 }
 export const useBoxStore = defineStore('box', () => {
   const { isWall } = useMapStore()
@@ -35,6 +36,9 @@ export const useBoxStore = defineStore('box', () => {
       return false
     box.x = box.x + dx
     box.y = box.y + dy
+
+    const { targets } = useTargetStore()
+    box.onTarget = targets.some(target => target.x === box.x && target.y === box.y)
     return true
   }
 

@@ -9,7 +9,7 @@ const { map } = useMapStore()
 <template>
   <div of-hidden>
     <div v-for="row, r in map" :key="r" flex>
-      <div v-for="col, c in row" :key="c" wh-50px>
+    <div v-for="col, c in row" :key="c" class="wh-50px">
         <img v-if="col === MapTile.WALL" wh-full :src="wall">
         <img v-if="col === MapTile.FLOOR" wh-full :src="floor">
       </div>

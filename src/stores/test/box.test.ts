@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it } from 'vitest'
 import { createPinia, setActivePinia } from 'pinia'
-import { useBoxStore, useMapStore, usePlayerStore } from '~/stores'
+import { useBoxStore, useMapStore, usePlayerStore,useTargetStore } from '~/stores'
 
 describe('box', () => {
   beforeEach(() => {
@@ -166,5 +166,51 @@ describe('box', () => {
       expect(boxs[0].y).toBe(2)
       expect(boxs[1].y).toBe(3)
     })
+  })
+
+  describe('target', () => {
+   it('box is on target when move to left', () => {
+      const { boxs, createBox, addBox, moveBox } = useBoxStore()
+      const {createTarget, addTarget } = useTargetStore()
+
+      addTarget(createTarget(1, 1))
+      addBox(createBox(2, 1))
+      moveBox(boxs[0], -1, 0)
+     
+      expect(boxs[0].onTarget).toBe(true)
+   }) 
+
+   it('box is on target when move to right', () => {
+      const { boxs, createBox, addBox, moveBox } = useBoxStore()
+      const {createTarget, addTarget } = useTargetStore()
+
+      addTarget(createTarget(2, 1))
+      addBox(createBox(1, 1))
+      moveBox(boxs[0], 1, 0)
+     
+      expect(boxs[0].onTarget).toBe(true)
+   }) 
+
+   it('box is on target when move to up', () => {
+      const { boxs, createBox, addBox, moveBox } = useBoxStore()
+      const {createTarget, addTarget } = useTargetStore()
+
+      addTarget(createTarget(1, 1))
+      addBox(createBox(1, 2))
+      moveBox(boxs[0], 0, -1)
+     
+      expect(boxs[0].onTarget).toBe(true)
+   }) 
+
+   it('box is on target when move to down', () => {
+      const { boxs, createBox, addBox, moveBox } = useBoxStore()
+      const {createTarget, addTarget } = useTargetStore()
+
+      addTarget(createTarget(1, 2))
+      addBox(createBox(1, 1))
+      moveBox(boxs[0], 0, 1)
+     
+      expect(boxs[0].onTarget).toBe(true)
+   })
   })
 })
