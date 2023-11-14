@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { useMapStore, useTargetStore } from '.'
+import { useMapStore, useTargetStore, type Position} from '.'
 
 export interface Box {
   x: number
@@ -29,6 +29,11 @@ export const useBoxStore = defineStore('box', () => {
     return !!findBox(pos)
   }
 
+  function generateBoxs(positions: Position[] = []) {
+    resetBoxs()
+    positions.forEach((position) => addBox(position))
+  }
+
   function moveBox(box: Box, dx: number, dy: number) {
     const boxNextPosition = { x: box.x + dx, y: box.y + dy }
     if (isBox(boxNextPosition) || isWall(boxNextPosition))
@@ -42,5 +47,5 @@ export const useBoxStore = defineStore('box', () => {
     return true
   }
 
-  return { boxs, createBox, addBox, findBox, resetBoxs, moveBox }
+  return { boxs, createBox, addBox, findBox, resetBoxs, moveBox, generateBoxs }
 })

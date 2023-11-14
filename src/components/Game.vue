@@ -1,24 +1,10 @@
 <script setup lang='ts'>
-import { useBoxStore, useGameStore, useTargetStore } from '~/stores'
+import { useBoxStore, useGameStore, useTargetStore} from '~/stores'
 
-const { game } = useGameStore()
-const { boxs, addBox, resetBoxs } = useBoxStore()
-const { targets, addTarget, resetTargets } = useTargetStore()
-function generateBox() {
-  resetBoxs()
-  addBox({ x: 2, y: 2 })
-  addBox({ x: 3, y: 2 })
-  // addBox({ x: 2, y: 1 })
-  // addBox({ x: 2, y: 3 })
-}
-
-function generateTarget() {
-  resetTargets()
-  addTarget({ x: 2, y: 1 })
-  addTarget({ x: 3, y: 3 })
-}
-generateBox()
-generateTarget()
+const { game,setupGame } = useGameStore()
+const { boxs} = useBoxStore()
+const { targets} = useTargetStore()
+setupGame()
 </script>
 
 <template>

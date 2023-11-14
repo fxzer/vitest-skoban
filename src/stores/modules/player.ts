@@ -1,12 +1,16 @@
 import { defineStore } from 'pinia'
 import { useBoxStore, useMapStore } from '~/stores'
 
+interface Player{
+  x: number
+  y: number
+}
 export const usePlayerStore = defineStore('player', () => {
   const { isWall } = useMapStore()
   const { findBox, moveBox } = useBoxStore()
-  const player = reactive({
-    x: 2,
-    y: 3,
+  const player:Player = reactive({
+    x: 0,
+    y: 0,
   })
 
   function _move(dx: number, dy: number) {

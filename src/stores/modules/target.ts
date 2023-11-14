@@ -18,6 +18,9 @@ export const useTargetStore = defineStore('target', () => {
   function resetTargets() {
     targets.splice(0, targets.length)
   }
-
-  return { targets, createTarget, addTarget, resetTargets }
+  function generateTargets(positions: Target[] = []) {
+    resetTargets()
+    positions.forEach((position) => addTarget(position))
+  }
+  return { targets, createTarget, addTarget, resetTargets, generateTargets }
 })
