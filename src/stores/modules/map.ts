@@ -17,7 +17,7 @@ export const useMapStore = defineStore('map', () => {
     return map[position.y][position.x] === MapTile.WALL
   }
   function setNewMap(newMap: Map) {
-    map.splice(0, map.length, ...newMap)
+    map.splice(0, map.length, ...JSON.parse(JSON.stringify(newMap)))
   }
   return { map, setNewMap, isWall }
 })

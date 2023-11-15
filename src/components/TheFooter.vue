@@ -1,5 +1,5 @@
 <template>
-  <nav mt-6 inline-flex gap-2 text-xl>
+  <nav inline-flex gap-2 text-xl>
     <button @click="toggleDarkAnimate">
       <div i-carbon-sun dark:i-carbon-moon />
     </button>

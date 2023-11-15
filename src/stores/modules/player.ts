@@ -1,11 +1,12 @@
 import { defineStore } from 'pinia'
-import { useBoxStore, useMapStore } from '~/stores'
+import { useBoxStore, useMapStore, useGameStore } from '~/stores'
 
 interface Player{
   x: number
   y: number
 }
 export const usePlayerStore = defineStore('player', () => {
+  const { game  } = useGameStore()
   const { isWall } = useMapStore()
   const { findBox, moveBox } = useBoxStore()
   const player:Player = reactive({
@@ -28,6 +29,8 @@ export const usePlayerStore = defineStore('player', () => {
     // 玩家移动
     player.x = nextPosition.x
     player.y = nextPosition.y
+    // 步数加一
+    game.step++
   }
 
   function movePlayerToLeft() {
