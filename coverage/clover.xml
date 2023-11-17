@@ -1,9 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1699890530846" clover="3.2.0">
-  <project timestamp="1699890530846" name="All files">
-    <metrics statements="194" coveredstatements="187" conditionals="36" coveredconditionals="36" methods="18" coveredmethods="15" elements="248" coveredelements="238" complexity="0" loc="194" ncloc="194" packages="3" files="8" classes="8"/>
+<coverage generated="1700035838206" clover="3.2.0">
+  <project timestamp="1700035838206" name="All files">
+    <metrics statements="302" coveredstatements="293" conditionals="43" coveredconditionals="43" methods="23" coveredmethods="20" elements="368" coveredelements="356" complexity="0" loc="302" ncloc="302" packages="3" files="9" classes="9"/>
     <package name="composables">
-      <metrics statements="14" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <metrics statements="88" coveredstatements="88" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="gameData.ts" path="/Users/fxzer/Program/Project/Vitest/vitest-sokoban/src/composables/gameData.ts">
+        <metrics statements="74" coveredstatements="74" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="68" count="1" type="stmt"/>
+        <line num="69" count="1" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
+        <line num="71" count="1" type="stmt"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
+        <line num="74" count="1" type="stmt"/>
+      </file>
       <file name="position.ts" path="/Users/fxzer/Program/Project/Vitest/vitest-sokoban/src/composables/position.ts">
         <metrics statements="14" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
@@ -38,9 +115,9 @@
       </file>
     </package>
     <package name="stores.modules">
-      <metrics statements="171" coveredstatements="167" conditionals="34" coveredconditionals="34" methods="16" coveredmethods="14"/>
+      <metrics statements="205" coveredstatements="199" conditionals="41" coveredconditionals="41" methods="21" coveredmethods="19"/>
       <file name="box.ts" path="/Users/fxzer/Program/Project/Vitest/vitest-sokoban/src/stores/modules/box.ts">
-        <metrics statements="46" coveredstatements="44" conditionals="13" coveredconditionals="13" methods="6" coveredmethods="5"/>
+        <metrics statements="51" coveredstatements="51" conditionals="16" coveredconditionals="16" methods="7" coveredmethods="7"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -50,60 +127,93 @@
         <line num="7" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="10" count="26" type="stmt"/>
-        <line num="11" count="26" type="stmt"/>
-        <line num="12" count="26" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="27" type="stmt"/>
+        <line num="11" count="27" type="stmt"/>
+        <line num="12" count="27" type="cond" truecount="1" falsecount="0"/>
         <line num="13" count="23" type="stmt"/>
         <line num="14" count="23" type="stmt"/>
-        <line num="15" count="26" type="stmt"/>
-        <line num="16" count="26" type="cond" truecount="1" falsecount="0"/>
-        <line num="17" count="23" type="stmt"/>
-        <line num="18" count="23" type="stmt"/>
-        <line num="19" count="26" type="stmt"/>
-        <line num="20" count="26" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="27" type="stmt"/>
+        <line num="16" count="27" type="cond" truecount="1" falsecount="0"/>
+        <line num="17" count="25" type="stmt"/>
+        <line num="18" count="25" type="stmt"/>
+        <line num="19" count="27" type="stmt"/>
+        <line num="20" count="27" type="cond" truecount="1" falsecount="0"/>
         <line num="21" count="34" type="cond" truecount="2" falsecount="0"/>
         <line num="22" count="34" type="stmt"/>
-        <line num="23" count="26" type="stmt"/>
-        <line num="24" count="26" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="27" count="26" type="stmt"/>
-        <line num="28" count="26" type="cond" truecount="1" falsecount="0"/>
+        <line num="23" count="27" type="stmt"/>
+        <line num="24" count="27" type="cond" truecount="1" falsecount="0"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="27" type="stmt"/>
+        <line num="28" count="27" type="cond" truecount="1" falsecount="0"/>
         <line num="29" count="18" type="stmt"/>
         <line num="30" count="18" type="stmt"/>
-        <line num="31" count="26" type="stmt"/>
-        <line num="32" count="26" type="cond" truecount="1" falsecount="0"/>
-        <line num="33" count="18" type="stmt"/>
-        <line num="34" count="18" type="cond" truecount="1" falsecount="0"/>
-        <line num="35" count="18" type="cond" truecount="2" falsecount="0"/>
-        <line num="36" count="10" type="stmt"/>
-        <line num="37" count="10" type="stmt"/>
-        <line num="38" count="10" type="stmt"/>
-        <line num="39" count="10" type="stmt"/>
-        <line num="40" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="31" count="27" type="stmt"/>
+        <line num="32" count="27" type="cond" truecount="1" falsecount="0"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="27" type="stmt"/>
+        <line num="37" count="27" type="cond" truecount="1" falsecount="0"/>
+        <line num="38" count="18" type="stmt"/>
+        <line num="39" count="18" type="cond" truecount="1" falsecount="0"/>
+        <line num="40" count="18" type="cond" truecount="2" falsecount="0"/>
         <line num="41" count="10" type="stmt"/>
         <line num="42" count="10" type="stmt"/>
-        <line num="43" count="18" type="stmt"/>
-        <line num="44" count="26" type="stmt"/>
-        <line num="45" count="26" type="stmt"/>
-        <line num="46" count="26" type="stmt"/>
+        <line num="43" count="10" type="stmt"/>
+        <line num="44" count="10" type="stmt"/>
+        <line num="45" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="46" count="10" type="stmt"/>
+        <line num="47" count="10" type="stmt"/>
+        <line num="48" count="18" type="stmt"/>
+        <line num="49" count="27" type="stmt"/>
+        <line num="50" count="27" type="stmt"/>
+        <line num="51" count="27" type="stmt"/>
       </file>
       <file name="game.ts" path="/Users/fxzer/Program/Project/Vitest/vitest-sokoban/src/stores/modules/game.ts">
-        <metrics statements="14" coveredstatements="14" conditionals="3" coveredconditionals="3" methods="0" coveredmethods="0"/>
+        <metrics statements="42" coveredstatements="36" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="22" type="stmt"/>
+        <line num="12" count="22" type="stmt"/>
+        <line num="13" count="22" type="stmt"/>
+        <line num="14" count="22" type="stmt"/>
+        <line num="15" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="22" type="stmt"/>
+        <line num="17" count="22" type="stmt"/>
+        <line num="18" count="22" type="cond" truecount="1" falsecount="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="22" type="stmt"/>
+        <line num="31" count="22" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="22" type="stmt"/>
+        <line num="35" count="22" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="22" type="stmt"/>
+        <line num="41" count="22" type="stmt"/>
+        <line num="42" count="22" type="stmt"/>
       </file>
       <file name="index.ts" path="/Users/fxzer/Program/Project/Vitest/vitest-sokoban/src/stores/modules/index.ts">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -114,7 +224,7 @@
         <line num="5" count="1" type="stmt"/>
       </file>
       <file name="map.ts" path="/Users/fxzer/Program/Project/Vitest/vitest-sokoban/src/stores/modules/map.ts">
-        <metrics statements="31" coveredstatements="31" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <metrics statements="23" coveredstatements="23" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
@@ -128,80 +238,80 @@
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
         <line num="13" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="14" count="27" type="stmt"/>
-        <line num="15" count="27" type="stmt"/>
-        <line num="16" count="27" type="stmt"/>
-        <line num="17" count="27" type="stmt"/>
-        <line num="18" count="27" type="stmt"/>
-        <line num="19" count="27" type="stmt"/>
-        <line num="20" count="27" type="stmt"/>
-        <line num="21" count="27" type="stmt"/>
-        <line num="22" count="27" type="stmt"/>
-        <line num="23" count="27" type="stmt"/>
-        <line num="24" count="27" type="cond" truecount="1" falsecount="0"/>
-        <line num="25" count="34" type="stmt"/>
-        <line num="26" count="34" type="stmt"/>
-        <line num="27" count="27" type="cond" truecount="1" falsecount="0"/>
-        <line num="28" count="26" type="stmt"/>
-        <line num="29" count="26" type="stmt"/>
-        <line num="30" count="27" type="stmt"/>
-        <line num="31" count="27" type="stmt"/>
+        <line num="14" count="28" type="stmt"/>
+        <line num="15" count="28" type="stmt"/>
+        <line num="16" count="28" type="cond" truecount="1" falsecount="0"/>
+        <line num="17" count="34" type="stmt"/>
+        <line num="18" count="34" type="stmt"/>
+        <line num="19" count="28" type="cond" truecount="1" falsecount="0"/>
+        <line num="20" count="28" type="stmt"/>
+        <line num="21" count="28" type="stmt"/>
+        <line num="22" count="28" type="stmt"/>
+        <line num="23" count="28" type="stmt"/>
       </file>
       <file name="player.ts" path="/Users/fxzer/Program/Project/Vitest/vitest-sokoban/src/stores/modules/player.ts">
-        <metrics statements="50" coveredstatements="50" conditionals="11" coveredconditionals="11" methods="5" coveredmethods="5"/>
+        <metrics statements="58" coveredstatements="58" conditionals="11" coveredconditionals="11" methods="5" coveredmethods="5"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="5" count="20" type="stmt"/>
-        <line num="6" count="20" type="stmt"/>
-        <line num="7" count="20" type="stmt"/>
-        <line num="8" count="20" type="stmt"/>
-        <line num="9" count="20" type="stmt"/>
-        <line num="10" count="20" type="stmt"/>
-        <line num="11" count="20" type="stmt"/>
-        <line num="12" count="20" type="cond" truecount="1" falsecount="0"/>
-        <line num="13" count="20" type="stmt"/>
-        <line num="14" count="20" type="stmt"/>
-        <line num="15" count="20" type="cond" truecount="2" falsecount="0"/>
-        <line num="16" count="16" type="stmt"/>
-        <line num="17" count="16" type="stmt"/>
-        <line num="18" count="20" type="cond" truecount="1" falsecount="0"/>
-        <line num="19" count="12" type="stmt"/>
-        <line num="20" count="12" type="stmt"/>
-        <line num="21" count="12" type="cond" truecount="1" falsecount="0"/>
-        <line num="22" count="12" type="cond" truecount="1" falsecount="0"/>
-        <line num="23" count="8" type="stmt"/>
-        <line num="24" count="8" type="stmt"/>
-        <line num="25" count="8" type="stmt"/>
-        <line num="26" count="20" type="stmt"/>
-        <line num="27" count="20" type="stmt"/>
-        <line num="28" count="20" type="cond" truecount="1" falsecount="0"/>
-        <line num="29" count="5" type="stmt"/>
-        <line num="30" count="5" type="stmt"/>
-        <line num="31" count="20" type="stmt"/>
-        <line num="32" count="20" type="cond" truecount="1" falsecount="0"/>
-        <line num="33" count="5" type="stmt"/>
-        <line num="34" count="5" type="stmt"/>
-        <line num="35" count="20" type="stmt"/>
-        <line num="36" count="20" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="21" type="stmt"/>
+        <line num="10" count="21" type="stmt"/>
+        <line num="11" count="21" type="stmt"/>
+        <line num="12" count="21" type="stmt"/>
+        <line num="13" count="21" type="stmt"/>
+        <line num="14" count="21" type="stmt"/>
+        <line num="15" count="21" type="stmt"/>
+        <line num="16" count="21" type="stmt"/>
+        <line num="17" count="21" type="cond" truecount="1" falsecount="0"/>
+        <line num="18" count="20" type="stmt"/>
+        <line num="19" count="20" type="stmt"/>
+        <line num="20" count="20" type="stmt"/>
+        <line num="21" count="20" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="16" type="stmt"/>
+        <line num="23" count="16" type="stmt"/>
+        <line num="24" count="20" type="cond" truecount="1" falsecount="0"/>
+        <line num="25" count="12" type="stmt"/>
+        <line num="26" count="12" type="stmt"/>
+        <line num="27" count="12" type="cond" truecount="1" falsecount="0"/>
+        <line num="28" count="12" type="cond" truecount="1" falsecount="0"/>
+        <line num="29" count="8" type="stmt"/>
+        <line num="30" count="8" type="stmt"/>
+        <line num="31" count="8" type="stmt"/>
+        <line num="32" count="8" type="stmt"/>
+        <line num="33" count="8" type="stmt"/>
+        <line num="34" count="20" type="stmt"/>
+        <line num="35" count="21" type="stmt"/>
+        <line num="36" count="21" type="cond" truecount="1" falsecount="0"/>
         <line num="37" count="5" type="stmt"/>
         <line num="38" count="5" type="stmt"/>
-        <line num="39" count="20" type="stmt"/>
-        <line num="40" count="20" type="cond" truecount="1" falsecount="0"/>
+        <line num="39" count="21" type="stmt"/>
+        <line num="40" count="21" type="cond" truecount="1" falsecount="0"/>
         <line num="41" count="5" type="stmt"/>
         <line num="42" count="5" type="stmt"/>
-        <line num="43" count="20" type="stmt"/>
-        <line num="44" count="20" type="stmt"/>
-        <line num="45" count="20" type="stmt"/>
-        <line num="46" count="20" type="stmt"/>
-        <line num="47" count="20" type="stmt"/>
-        <line num="48" count="20" type="stmt"/>
-        <line num="49" count="20" type="stmt"/>
-        <line num="50" count="20" type="stmt"/>
+        <line num="43" count="21" type="stmt"/>
+        <line num="44" count="21" type="cond" truecount="1" falsecount="0"/>
+        <line num="45" count="5" type="stmt"/>
+        <line num="46" count="5" type="stmt"/>
+        <line num="47" count="21" type="stmt"/>
+        <line num="48" count="21" type="cond" truecount="1" falsecount="0"/>
+        <line num="49" count="5" type="stmt"/>
+        <line num="50" count="5" type="stmt"/>
+        <line num="51" count="21" type="stmt"/>
+        <line num="52" count="21" type="stmt"/>
+        <line num="53" count="21" type="stmt"/>
+        <line num="54" count="21" type="stmt"/>
+        <line num="55" count="21" type="stmt"/>
+        <line num="56" count="21" type="stmt"/>
+        <line num="57" count="21" type="stmt"/>
+        <line num="58" count="21" type="stmt"/>
       </file>
       <file name="target.ts" path="/Users/fxzer/Program/Project/Vitest/vitest-sokoban/src/stores/modules/target.ts">
-        <metrics statements="25" coveredstatements="23" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="2"/>
+        <metrics statements="26" coveredstatements="26" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -209,24 +319,25 @@
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="8" count="9" type="stmt"/>
-        <line num="9" count="9" type="stmt"/>
-        <line num="10" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="10" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="10" count="10" type="cond" truecount="1" falsecount="0"/>
         <line num="11" count="6" type="stmt"/>
         <line num="12" count="6" type="stmt"/>
-        <line num="13" count="9" type="stmt"/>
-        <line num="14" count="9" type="cond" truecount="1" falsecount="0"/>
-        <line num="15" count="6" type="stmt"/>
-        <line num="16" count="6" type="stmt"/>
-        <line num="17" count="9" type="stmt"/>
-        <line num="18" count="9" type="stmt"/>
-        <line num="19" count="9" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="22" count="9" type="stmt"/>
-        <line num="23" count="9" type="stmt"/>
-        <line num="24" count="9" type="stmt"/>
-        <line num="25" count="9" type="stmt"/>
+        <line num="13" count="10" type="stmt"/>
+        <line num="14" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="8" type="stmt"/>
+        <line num="16" count="8" type="stmt"/>
+        <line num="17" count="10" type="stmt"/>
+        <line num="18" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="10" type="stmt"/>
+        <line num="26" count="10" type="stmt"/>
       </file>
     </package>
   </project>

@@ -12,9 +12,9 @@ export const useBoxStore = defineStore('box', () => {
   function createBox(x: number, y: number): Box {
     return { x, y }
   }
-
+   
   function addBox(box: Box) {
-    boxs.push(box)
+    boxs.push(box) 
   }
 
   function findBox(pos: { x: number; y: number }): Box | undefined {
